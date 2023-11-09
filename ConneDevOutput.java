@@ -1,3 +1,4 @@
+// this is the output of the device connectivity program
 Smartphone connected to network
 Making a call from smartphone
 Tablet connected to network
