@@ -1,9 +1,10 @@
-// Define an interface for devices that can connect to a network
+// This program shows connectivity of devices 
+// I define an interface for devices that can connect to a network
 interface NetworkConnectable {
-    void connectToNetwork(); // Method signature for connecting to a network
+    void connectToNetwork(); // Method for connecting to a network
 }
 
-// Class representing a Smartphone, implements NetworkConnectable interface
+// class representing a Smartphone, implements Network Connectable interface
 class Smartphone implements NetworkConnectable {
     @Override
     public void connectToNetwork() {
@@ -15,7 +16,7 @@ class Smartphone implements NetworkConnectable {
     }
 }
 
-// Class representing a Tablet, implements NetworkConnectable interface
+// Class representing a Tablet, implements Network connectable interface
 class Tablet implements NetworkConnectable {
     @Override
     public void connectToNetwork() {
@@ -27,7 +28,7 @@ class Tablet implements NetworkConnectable {
     }
 }
 
-// Class representing a Laptop, implements NetworkConnectable interface
+// class representing a Laptop, implements Network connectable interface
 class Laptop implements NetworkConnectable {
     @Override
     public void connectToNetwork() {
@@ -39,7 +40,7 @@ class Laptop implements NetworkConnectable {
     }
 }
 
-// Class representing a Desktop, implements NetworkConnectable interface
+// class representing a desktop, implements Network connectable interface
 class Desktop implements NetworkConnectable {
     @Override
     public void connectToNetwork() {
@@ -54,19 +55,19 @@ class Desktop implements NetworkConnectable {
 public class Main {
     public static void main(String[] args) {
         Smartphone myPhone = new Smartphone();
-        myPhone.connectToNetwork(); // Connect the smartphone to the network
-        myPhone.makeCall(); // Make a call using the smartphone
+        myPhone.connectToNetwork(); // connect the smartphone to the network
+        myPhone.makeCall(); // make a call using the smartphone
 
         Tablet myTablet = new Tablet();
-        myTablet.connectToNetwork(); // Connect the tablet to the network
-        myTablet.playGame(); // Play a game on the tablet
+        myTablet.connectToNetwork(); // Connect the tablet 
+        myTablet.playGame(); // play a game on the tablet
 
         Laptop myLaptop = new Laptop();
-        myLaptop.connectToNetwork(); // Connect the laptop to the network
+        myLaptop.connectToNetwork(); // connect the laptop 
         myLaptop.doWork(); // Do some work on the laptop
 
         Desktop myDesktop = new Desktop();
-        myDesktop.connectToNetwork(); // Connect the desktop computer to the network
-        myDesktop.runSoftware(); // Run software on the desktop computer
+        myDesktop.connectToNetwork(); // Connect the desktop computer to network
+        myDesktop.runSoftware(); // run software on the desktop computer
     }
 }
